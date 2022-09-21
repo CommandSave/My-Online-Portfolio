@@ -21,6 +21,12 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Cecile</a>
+            <a href="https://linkedin.com/" target="_blank" class="nav__logo">
+                <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" class="nav__logo">
+                <i class="uil uil-github-alt"></i>
+            </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -73,35 +79,30 @@
     <!--=========================== MAIN ===========================-->
     <main class="main">
         <!--=========================== HOME ===========================-->
-        <section class="home section" id="home">
-            <div class="home__container container">
+        <section class="home home__section" id="home">
+            <div class="home__container">
                 <div class="home__content">
 
-                    <div class="home__social">
-                        <a href="https://linkedin.com/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-
-                        <a href="https://github.com/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-
                     <div class="home__data">
-                        <h1 class="home__title">I am a <br> <i class="home__description_frontend">Front-end Developer</i> <br> and <i class="home__description_designer">Designer</i> <br> who loves technology and everything creativity.  </h1>
+                        <div class="home__title1"><h3>Hello, I'm Cecile</h3></div>
+                        <div class="home__title2"><h1>A <i class="home__description_frontend">Front-end Developer</i> <br> and <i class="home__description_designer">Designer</i></h1></div>
                         <br>
-                        <h3 class="home__subtitle"></h3>
-                        <p class="home__description">I've curated this webpage to showcase my web development skills.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
+                        <div class="home__description"><p>I've curated this webpage to showcase my web development skills.</p></div>
+                        <div>
+                            <a href="#contact" class="home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex"></a>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <div>
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex"></a>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        </div>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -164,7 +165,7 @@
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Frontend Development</h1>
+                                <h1 class="skills__title">Front-end Development</h1>
                                 <span class="skills__subtitle">Lorem ipsum</span>
                             </div>
 
@@ -191,7 +192,7 @@
                             <i class="uil uil-server-network skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Backend Development</h1>
+                                <h1 class="skills__title">Back-end Development</h1>
                                 <span class="skills__subtitle">Lorem ipsum</span>
                             </div>
 
@@ -216,7 +217,7 @@
 
                             <div>
                                 <h1 class="skills__title">Graphic Design</h1>
-                                <span class="skills__subtitle">Lorem ipsum</span>
+                                <span class="skills__subtitle">These are the programs I used when I worked with as a designer.</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -246,7 +247,7 @@
                 <div class="swiper-wrapper">
                     <!--=================== PORTFOLIO 1 ===================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio_placeholder1.png" alt="portfolio1" class="portfolio__img">
+                        <img src="assets/img/tindog_app.png" alt="portfolio1" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">TinDog (Variation of Tinder)</h3>
@@ -259,7 +260,7 @@
                     </div>
                     <!--=================== PORTFOLIO 2 ===================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/screen1.gif" alt="portfolio2" class="portfolio__img">
+                        <img src="assets/img/memo_app.gif" alt="portfolio2" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Memo</h3>
@@ -272,7 +273,7 @@
                     </div>
                     <!--=================== PORTFOLIO 3 ===================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio_placeholder3.png" alt="portfolio_placeholder1" class="portfolio__img">
+                        <img src="assets/img/simon_game.gif" alt="portfolio3" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Simon Game</h3>
