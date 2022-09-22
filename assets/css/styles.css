@@ -76,14 +76,35 @@
     /*====== Variable Dark Theme ======*/  
     body.dark-theme{
         /* HSL Color Mode */
-        --first-color-second: #c89898;
-        --first-color-lighter: #fff4f4;
-        --title-color: #421c29;
-        --text-color: #fff4f4;
+        --first-color: #3A3845;
+        --first-color-second: #FDF6EC;
+        --first-color-lighter: #ffeded;
+        --second-color: #FDF6EC;
+        --title-color: #A97155;
+        --text-color: #562B08;
+        --text-color-light: #562B08;
         --input-color: #850E35;
-        --body-color: #A77979;
-        --container-color: rgb(93, 93, 93);
+        --body-color: #F7CCAC;
+        --container-color: #C69B7B;
     }
+
+    /* .home__description_designer.dark-theme{
+        animation-name: colorchangedark;
+        animation-duration: 10s;
+        animation-delay: 3s;
+        animation-iteration-count: 10;
+    }
+    
+    @keyframes colorchangedark {
+        0% {color: #A97155;}
+        10% {color: #D06224;}
+        25% {color: #FFEDDB;}
+        50% {color: #9C0F48;} 
+        75% {color: #FFEDDB;}
+        100% {color: #A97155;}
+    } */
+
+
 
     /*====== Button Dark/Light ======*/
     .nav__btns{
@@ -194,7 +215,7 @@ img{
 .nav__logo,
 .nav__toggle{
     color: var(--second-color);
-    font-weight: var(font-medium);
+    font-weight: var(--font-medium);
 }
 
 .nav__logo:hover{
@@ -261,7 +282,7 @@ img{
 
 .nav__tryMe{
     font-size: var(--small-font-size);
-    color: #6F38C5;
+    color: var(--second-color);
     font-weight: var(--font-semi-bold);
 }
 
@@ -312,14 +333,14 @@ img{
     animation-name: colorchange;
     animation-duration: 10s;
     animation-delay: 3s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 2;
 }
 
 @keyframes colorchange {
     0% {color: #e17474;}
     10% {color: #B2A4FF;}
-    25% {color: #FFE898;}
-    50% {color: #FF7396;} /*pink*/
+    25% {color: #E60965;}
+    50% {color: #FF7396;} 
     75% {color: #B2A4FF;}
     100% {color: #e17474;}
 }
@@ -328,6 +349,7 @@ img{
     font-size: 15px;
     margin-bottom: var(--mb-2);
     text-align: center;
+    color: var(--text-color);
 }
 
 .home__button{
@@ -374,7 +396,7 @@ img{
 
 .home__scroll-name{
     font-size: 16px;
-    color:var(--text-color-light);
+    color: var(--text-color-light);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
     display: inline-block;
@@ -617,7 +639,7 @@ img{
 
 /*=========================== PORTFOLIO ===========================*/
 .portfolio{
-    background-color:#fff;
+    background-color:var(--container-color);
 }
 
 .portfolio__container{
@@ -682,7 +704,7 @@ img{
 
 /*=========================== CONTACT ME ===========================*/
 .contact{
-    background-color:#fff;
+    background-color:var(--container-color);
 }
 
 .contact__container{
@@ -736,7 +758,7 @@ img{
 /*=========================== FOOTER ===========================*/
 .footer{
     padding-top: 2rem;
-    background-color:#B2A4FF;
+    background-color: var(--first-color);
 }
 
 .footer__container{
@@ -959,7 +981,6 @@ img{
     .header{
         top: 0;
         bottom: initial;
-        background-color: #ccc4f9;
     }
 
     .header,
@@ -970,13 +991,9 @@ img{
 
     .nav{
         /* margin: 2rem 3rem; */
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         column-gap: 1rem;
-    }
-
-    .nav__link__wide{
-        color:#FDF6EC;
     }
 
     .nav__icon,
