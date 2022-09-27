@@ -14,6 +14,7 @@
     --first-color-second: #FDF6EC; /* done */
     --first-color-alt: #dfdaff;
     --second-color: #6F38C5;
+    --second-color-header: #6F38C5;
     --first-color-lighter: #ccc4f9;
     --title-color: #E97171; /* done */
     --text-color: #d16262;
@@ -23,6 +24,8 @@
     --container-color: #FFF;
     --scroll-bar-color: #FDCEB9;
     --scroll-thumb-color: #b5a9f9;
+    --color-contact: #B2A4FF;
+    --color-input: #FDF6EC;
 
     /*====== Font & Typography ======*/
     --body-font: "Work Sans", sans-serif;
@@ -79,13 +82,23 @@
         --first-color: #3A3845;
         --first-color-second: #FDF6EC;
         --first-color-lighter: #ffeded;
-        --second-color: #FDF6EC;
-        --title-color: #A97155;
-        --text-color: #562B08;
-        --text-color-light: #562B08;
+        --second-color: #562B08;
+        --second-color-header: #F7CCAC;
+        --title-color: #562B08;
+        --text-color: #8f5538; /* I've curayed this website... */
+        --text-color-light: #A97155;
         --input-color: #850E35;
         --body-color: #F7CCAC;
-        --container-color: #C69B7B;
+        --container-color: #d7a986;
+        --color-contact: #8f5538;
+        --color-input: #562B08;
+        --scroll-bar-color: #F7CCAC;
+        --scroll-thumb-color: #562B08;
+
+        /* --text-color: #562B08; */
+        /* --text-color-light: #562B08; */
+        /* --second-color: #FDF6EC; */
+        /* --container-color: #C69B7B; */
     }
 
     /* .home__description_designer.dark-theme{
@@ -114,7 +127,7 @@
 
     .change-theme{
         font-size: 1.25rem;
-        color: var(--second-color);
+        color: var(--second-color-header);
         margin-right: var(--mb-1);
         cursor: pointer;
     }
@@ -214,7 +227,7 @@ img{
 
 .nav__logo,
 .nav__toggle{
-    color: var(--second-color);
+    color: var(--second-color-header);
     font-weight: var(--font-medium);
 }
 
@@ -255,7 +268,7 @@ img{
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--second-color);
+    color: var(--second-color-header);
     font-weight: var(--font-medium);
 }
 
@@ -282,7 +295,7 @@ img{
 
 .nav__tryMe{
     font-size: var(--small-font-size);
-    color: var(--second-color);
+    color: var(--second-color-header);
     font-weight: var(--font-semi-bold);
 }
 
@@ -500,11 +513,12 @@ img{
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 12px; /* This is the title headers */
 }
 
 .skills__icon,
 .skills__arrow{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--first-color);
 }
 
@@ -515,13 +529,6 @@ img{
 .skills__icon2{
     margin-right: var(--mb-0-75);
     color: var(--second-color);
-}
-
-.skills__title{
-    font-size: var(--h3-font-size);
-    /* margin-bottom: var(--mb-2); */
-    /* display: inline-block;
-    align-self: flex-end; */
 }
 
 .skills__titles{
@@ -546,6 +553,7 @@ img{
 .skills__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    color: var(--text-color);
 }
 
 .skills__close .skills__list{
@@ -730,7 +738,7 @@ img{
 
 .contact__subtitle{
     font-size: var(--small-font-size);
-    color: var(--first-color);
+    color: var(--color-contact); 
 }
 
 .contact__content{
@@ -741,7 +749,7 @@ img{
 
 .contact__label{
     font-size: var(--smaller-font-size);
-    color:#FDF6EC;
+    color: var(--color-input);
 }
 
 .contact__input{
@@ -860,7 +868,9 @@ img{
 
 /*=========================== MEDIA QUERIES ===========================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+/* @media screen and () */
+
+@media screen and (max-width: 567px) {
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -886,23 +896,17 @@ img{
         font-size: 30px;
     }
 
+    .home__scroll{
+        display: flex;
+        justify-content: center;
+    }
+
     .home__description{
         font-size: 12px;
         margin-bottom: var(--mb-2);
         text-align: center;
     }
     
-    .button--flex{
-        /* display: flex;
-        margin: auto; */
-    }
-
-    .home__scroll{
-        /* display: block; */
-        display: flex;
-        justify-content: center;
-    }
-
     .home__content{
         grid-template-columns: .25fr 3fr;
     }
@@ -917,10 +921,6 @@ img{
 
     .project__img{
         width: 200px;
-    }
-
-    .portfolio__description{
-        /* font-size: .5rem; */
     }
 }
 
@@ -957,6 +957,11 @@ img{
         grid-template-columns: .6fr;
         justify-content: center;
     }
+
+    .portfolio__data{
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width: 768px){
