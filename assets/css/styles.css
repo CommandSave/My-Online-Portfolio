@@ -181,6 +181,7 @@ img{
 .section__title{
     font-family: var(--second-font);
     font-size: var(--big-font-size);
+    margin-bottom: var(--mb-3);
 }
 
 .section__subtitle{
